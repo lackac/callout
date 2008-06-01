@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - Copyright (c) 2008 László Bácsi <callout@lackac.name>
+  -
+  - Permission to use, copy, modify, and distribute this software for any
+  - purpose with or without fee is hereby granted, provided that the above
+  - copyright notice and this permission notice appear in all copies.
+  -
+  - THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  - WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  - MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+  - ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  - WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  - ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+  - OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+  - -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://callout/locale/prefwindow.dtd">
+<prefwindow id="calloutPreferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;">
+  <prefpane id="pane1" label="&pane1.title;" style="padding-bottom: 1em;">
+    <preferences>
+      <preference id="source" name="extensions.callout.source" type="int"/>
+    </preferences>
+    <text value="&pref_source.label;" style="font-weight: bold;"/>
+    <radiogroup preference="source">
+      <radio value="2" label="&pref_source_anywhere.label;"/>
+      <radio value="1" label="&pref_source_gm.label;"/>
+      <radio value="0" label="&pref_source_nowhere.label;"/>
+    </radiogroup>
+  </prefpane>
+</prefwindow>

@@ -1,0 +1,6 @@
+<!ENTITY prefwindow.title "Callout preferences">
+<!ENTITY pane1.title "Callout preferences">
+<!ENTITY pref_source.label "Callout restrictions:">
+<!ENTITY pref_source_anywhere.label "Allow from anyone">
+<!ENTITY pref_source_gm.label "Allow only from GreaseMonkey scripts">
+<!ENTITY pref_source_nowhere.label "Switch notifications off">

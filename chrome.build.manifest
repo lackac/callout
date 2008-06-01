@@ -1,0 +1,5 @@
+content	callout	jar:chrome/callout.jar!/content/
+locale	callout	en-US	jar:chrome/callout.jar!/locale/en-US/
+locale	callout	hu-HU	jar:chrome/callout.jar!/locale/hu-HU/
+skin	callout	classic/1.0	jar:chrome/callout.jar!/skin/
+overlay	chrome://browser/content/browser.xul	chrome://callout/content/firefoxOverlay.xul

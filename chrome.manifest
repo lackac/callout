@@ -1,0 +1,5 @@
+content	callout	content/
+locale	callout	en-US	locale/en-US/
+locale	callout	hu-HU	locale/hu-HU/
+skin	callout	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://callout/content/firefoxOverlay.xul
