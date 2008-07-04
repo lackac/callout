@@ -9,8 +9,8 @@ JavaScript code and Greasemonkey scripts.
 == Requirements
 
 Callout supports Firefox 2+ on Windows and Linux and Firefox 3+ on Mac OSX.
-Mac OSX users will also need the {Growl}[1] notification system.
-{Greasemonkey}[2] is only required for userscript support.
+Mac OSX users will also need the {Growl}[http://growl.info/] notification system.
+{Greasemonkey}[https://addons.mozilla.org/en-US/firefox/addon/748] is only required for userscript support.
 
 == Usage
 
@@ -43,7 +43,7 @@ The available options are:
 === Loudspy
 
 There is a more elaborate example in the examples directory for a Greasemonkey
-script which uses Callout. This script works on {Digg spy}[3] and notifies the
+script which uses Callout. This script works on {Digg spy}[http://digg.com/spy] and notifies the
 user of each new digg displayed on the page.
 
 Warning: while this could be useful for the digg addict it is a serious distraction
@@ -54,12 +54,7 @@ http://lackac.hu/lab/callout/loudspy.user.js
 
 == Credits
  
-Author:: László Bácsi
+Author:: {László Bácsi}[http://lackac.name]
 Hungarian blog post:: http://lackac.hu/articles/2008/03/26/rendszeruzenetek-firefoxbol-es-turulcsirip-growl
  
-The original idea came from {András Bártházi}[4].
-
-[1]: http://growl.info/
-[2]: https://addons.mozilla.org/en-US/firefox/addon/748
-[3]: http://digg.com/spy
-[4]: http://barthazi.hu/
+The original idea came from {András Bártházi}[http://barthazi.hu/].
