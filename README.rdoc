@@ -22,10 +22,10 @@ with the message +message+.
 
 The available options are:
 
- * +icon+: with this you can specify an icon for the notification. This should be
-   an URI for the icon. If unspecified the default Callout icon is used.
- * +href+: this specifies a target page to go to if the user clicks on the
-   notification. This page will be opened in a new tab or window.
+* +icon+: with this you can specify an icon for the notification. This should be
+  an URI for the icon. If unspecified the default Callout icon is used.
+* +href+: this specifies a target page to go to if the user clicks on the
+  notification. This page will be opened in a new tab or window.
 
 == Examples
 
