@@ -34,14 +34,16 @@ The available options are:
     callout.notify('I Can Scale', 'My blog',
                    {href: 'http://icanscale.com/'});
 
-### Loudspy
+### Loudspy (defunct)
 
-There is a more elaborate example in the examples directory for a Greasemonkey script which uses Callout. This script works on [Digg spy](http://digg.com/spy) and notifies the user of each new digg displayed on the page.
+There is a more elaborate example in the examples directory for a Greasemonkey script which uses Callout. This script <del>works</del> worked on [Digg spy](http://digg.com/spy) and notified the user of each new digg displayed on the page.
 
 Warning: while this could be useful for the digg addict it is a serious distraction from work. :)
 
 This user script can also be installed from the following address:
 [http://github.com/lackac/callout/raw/master/examples/loudspy.user.js](http://github.com/lackac/callout/raw/master/examples/loudspy.user.js)
+
+**Note**: since the old Digg Spy have been retired this userscript is also defunct. Nevertheless it is a good way to see how a userscript which uses Callout could be written.
 
 ## Credits
 
