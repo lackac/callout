@@ -4,10 +4,10 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>callout@lackac.hu</em:id>
     <em:name>Callout</em:name>
-    <em:version>0.3.2.1</em:version>
+    <em:version>0.3.3</em:version>
     <em:creator>László Bácsi</em:creator>
     <em:description>Notification Services for Javascript</em:description>
-    <em:homepageURL>https://addons.mozilla.org/en-US/firefox/addon/7458</em:homepageURL>
+    <em:homepageURL>https://icanscale.com/callout/</em:homepageURL>
     <!--<em:updateURL>https://lackac.hu/lab/callout/update</em:updateURL>-->
     <em:aboutURL>chrome://callout/content/about.xul</em:aboutURL>
     <em:optionsURL>chrome://callout/content/options.xul</em:optionsURL>

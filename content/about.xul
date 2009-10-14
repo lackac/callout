@@ -22,14 +22,21 @@
 <groupbox align="center" orient="horizontal">
 <vbox>
   <text value="Callout" style="font-weight: bold; font-size: x-large;"/>
-  <text value="&version; 0.3.2"/>
+  <text id="version" value="&version; "/>
+  <script type="application/javascript">
+  //<![CDATA[
+    var ext = Application.extensions.get('callout@lackac.hu');
+    var version = document.getElementById('version');
+    version.setAttribute('value', version.getAttribute('value') + ext.version);
+  //]]>
+  </script>
   <separator class="thin"/>
   <text value="&createdBy;" style="font-weight: bold;"/>
   <text value="László Bácsi"/>
   <separator class="thin"/>
     <text value="&homepage;" style="font-weight: bold;"/>
-    <text value="https://addons.mozilla.org/en-US/firefox/addon/7458" class="url"
-        onclick="window.open('https://addons.mozilla.org/en-US/firefox/addon/7458'); window.close();"/>
+    <text value="http://icanscale.com/callout/" class="url"
+        onclick="window.open('http://icanscale.com/callout/'); window.close();"/>
   <separator class="thin"/>
 </vbox>
 </groupbox>

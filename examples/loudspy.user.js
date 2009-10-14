@@ -8,7 +8,7 @@
 // This is a Greasemonkey user script.
 //
 // To install, you need Greasemonkey: http://greasemonkey.mozdev.org/
-// You will also need the Callout extension: https://addons.mozilla.org/en-US/firefox/addon/7458
+// You will also need the Callout extension: http://icanscale.com/callout/
 // Install them then restart Firefox and revisit this script.
 //
 // To uninstall, go to Tools/Greasemonkey/Manage User Scripts,

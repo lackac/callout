@@ -41,7 +41,7 @@ const FROM_GM = 1;
 const FROM_WORLD = 2;
 
 var Callout = {
-  version: '0.3.2',
+  version: Application.extensions.get('callout@lackac.hu').version,
   icon: 'chrome://callout/content/callout.png',
 
   init: function() {
