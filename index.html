@@ -1,36 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>lackac/callout @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #f8b800;
-		  font-family: "Helvetica,Arial,FreeSans"; 
-  		color: #000000;
+  <title>Notification Services for Javascript in Firefox – Callout @ GitHub</title>
+  
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #fbe9b0;
+      font-family: "Helvetica,Arial,FreeSans"; 
+      color: #000000;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #0747ff; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #0747ff; }
+    h1 { font-size: 3.8em; color: #0747ff; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #0747ff; }
     h3 { text-align: center; color: #0747ff; }
     a { color: #0747ff; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
+    pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+    .screenshot {
+      clear: both;
+      float: right;
+      margin: 2em 0 1em 1em;
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -44,23 +49,38 @@
       <a href="http://github.com/lackac/callout/tarball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
-      
-    <h1><a href="http://github.com/lackac/callout">Callout</a> 
-      <span class="small">by <a href="http://github.com/lackac">lackac</a></span></h1>
 
-    <div class="description">
-      Notification Services for Javascript in Firefox (Growl, and alike)
+    <h1><a href="http://github.com/lackac/callout">Callout</a> 
+      <span class="small">by <a href="http://github.com/lackac">LacKac</a></span></h1>
+
+    <div class="screenshot">
+      <img src="images/screenshot.png" alt="a screenshot of Callout"/>
     </div>
 
-    <h2>Dependencies</h2>
-<p>Firefox 2.0+</p>
-<h2>Authors</h2>
-<p>Laszlo Bacsi (github@lackac.name)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>László Bácsi (lackac@gmail.com)<br/>      </p>
+    <div class="description">
+      Callout is a Firefox extension which delivers an API for web pages and Greasemonkey scripts to notify the user through the notification system of the OS. This would be Growl for Mac OS X users and Windows notifications for Windows users. The extension creates the <tt>callout</tt> JavaScript object which is usable by both unprivileged JavaScript code and Greasemonkey scripts.
+    </div>
 
+    <h2>Installation</h2>
+    <p>Install the newest version from <a href="https://addons.mozilla.org/en-US/firefox/addon/7458/">addons.mozilla.org</a></p>
+    <p><a href="http://github.com/lackac/callout#readme">README</a> on GitHub.</p>
 
-    <h2>Download</h2>
+    <h2>Requirements</h2>
+    <ul>
+      <li>Firefox 2.0+ (Firefox 3.0+ for Mac OS X)</li>
+      <li><a href="https://addons.mozilla.org/en-US/firefox/addon/748/">Greasemonkey</a> (optional)</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>Mozilla Public License Version 1.1 (or alternatively GPL 2.0 or LGPL 2.1)</p>
+
+    <h2>Authors</h2>
+    <p><a href="http://github.com/lackac/">László Bácsi</a></p>
+
+    <h2>Contact</h2>
+    <p>Feature requests and bug reports go to the <a href="http://github.com/lackac/callout/issues">GitHub Issues page</a>.</p>
+
+    <h2>Source Code Download</h2>
     <p>
       You can download this project in either
       <a href="http://github.com/lackac/callout/zipball/master">zip</a> or
@@ -70,13 +90,20 @@
       by running:
       <pre>$ git clone git://github.com/lackac/callout</pre>
     </p>
-      
+
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/lackac/callout">lackac/callout</a>
     </div>
-    
   </div>
 
-  
+  <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-298979-11");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>
