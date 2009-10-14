@@ -42,51 +42,36 @@ const FROM_WORLD = 2;
 
 var Callout = {
   version: '0.3.2',
-  GM_installed: false,
-  GM_evalInSandbox: null,
   icon: 'chrome://callout/content/callout.png',
 
   init: function() {
     this.initialized = true;
     var appcontent = document.getElementById("appcontent");
     if (appcontent) {
-      appcontent.addEventListener("DOMContentLoaded", Callout.onPageLoad, true);
+      appcontent.addEventListener("DOMContentLoaded", function(aEvent) {
+        var win = aEvent.originalTarget.defaultView.wrappedJSObject;
+        win.callout = new CalloutHandler(FROM_WORLD, win);
+      }, true);
     }
 
-    var gmSvc = Components.classes["@greasemonkey.mozdev.org/greasemonkey-service;1"]
+    var gmSvc = Components.classes["@greasemonkey.mozdev.org/greasemonkey-service;1"];
     if (gmSvc) {
-      Callout.GM_installed = true;
-      Callout.patchGM(gmSvc.getService().wrappedJSObject)
-    }
-  },
-
-  onPageLoad: function(aEvent) {
-    var win = aEvent.originalTarget.defaultView.wrappedJSObject;
-    win.callout = new CalloutHandler(FROM_WORLD, win);
-
-    // check if we are still injected into greasemonkey
-    if (Callout.GM_installed) {
-      var gmSvc = Components.classes["@greasemonkey.mozdev.org/greasemonkey-service;1"].getService().wrappedJSObject;
-      if (gmSvc.evalInSandbox != Callout.GM_evalInSandbox) {
-        //(new CalloutHandler(FROM_EXT, null)).notify('GM evalInSandbox changed', 'fixing it')
-        //gmSvc.evalInSandbox = GM_evalInSandbox;
-        Callout.patchGM(gmSvc)
-      }
+      this.patchGM(gmSvc.getService().wrappedJSObject);
     }
   },
 
   patchGM: function(gmSvc) {
-    var original = gmSvc.evalInSandbox;
-    Callout.GM_evalInSandbox = gmSvc.evalInSandbox = function() {
-      var args = (function (code, codebase, sandbox, script) {
+    if (!gmSvc._calloutInstalled) {
+      var original = gmSvc.evalInSandbox;
+      gmSvc.evalInSandbox = function(code, codebase, sandbox, script) {
         sandbox.callout = new CalloutHandler(FROM_GM, sandbox.unsafeWindow);
-        return [code, codebase, sandbox, script];
-      }).apply(gmSvc, arguments);
-      return original.apply(gmSvc, args);
+        return original.call(gmSvc, code, codebase, sandbox, script);
+      }
+      gmSvc._calloutInstalled = true;
     }
-  },
+  }
 };
-window.addEventListener("load", Callout.init, false);
+window.addEventListener("load", function(e) { Callout.init(); }, false);
 
 function CalloutHandler(source, win) {
   this.Callout = Callout.version;
