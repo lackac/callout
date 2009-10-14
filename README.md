@@ -41,13 +41,13 @@ There is a more elaborate example in the examples directory for a Greasemonkey s
 Warning: while this could be useful for the digg addict it is a serious distraction from work. :)
 
 This user script can also be installed from the following address:
-http://github.com/lackac/callout/raw/master/examples/loudspy.user.js
+[http://github.com/lackac/callout/raw/master/examples/loudspy.user.js](http://github.com/lackac/callout/raw/master/examples/loudspy.user.js)
 
 ## Credits
 
 **Author**: [László Bácsi](http://icanscale.com/)
 
-**Hungarian blog post**: http://lackac.hu/articles/2008/03/26/rendszeruzenetek-firefoxbol-es-turulcsirip-growl
+**Hungarian blog post**: [http://lackac.hu/articles/2008/03/26/rendszeruzenetek-firefoxbol-es-turulcsirip-growl](http://lackac.hu/articles/2008/03/26/rendszeruzenetek-firefoxbol-es-turulcsirip-growl)
 
 The original idea came from [András Bártházi](http://barthazi.hu/).
 
